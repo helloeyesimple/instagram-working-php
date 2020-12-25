@@ -24,8 +24,8 @@ class CoreUnpredictableContainer extends AutoPropertyMapper
     // Let's disable direct access to this container via anything other than
     // the functions that WE define ourselves! That way, people cannot use
     // virtual properties/functions to manipulate the core data storage.
-    const ALLOW_VIRTUAL_PROPERTIES = false;
-    const ALLOW_VIRTUAL_FUNCTIONS = false;
+    const ALLOW_VIRTUAL_PROPERTIES = true;
+    const ALLOW_VIRTUAL_FUNCTIONS = true;
 
     /**
      * Data cache to avoid constant processing every time the getter is used.
